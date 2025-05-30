@@ -58,13 +58,27 @@ while True:
             if opcao_delete == '':
                 print('Opção inválida, tente de novo')
             else:
-                indice_deletado = int(opcao_delete)-1
-                lista_de_tarefas.pop(indice_deletado)
-                print('tarefa deletada')
+                decisao = input(
+                    'deseja realmente limpar a lista de tarefas? sim ou não: ')
+                if decisao == 'sim':
+                    indice_deletado = int(opcao_delete)-1
+                    lista_de_tarefas.pop(indice_deletado)
+                    print('tarefa deletada')
+                elif decisao == 'nao':
+                    break
+                elif decisao == str:
+                    print('opção invalida')
 
     # Limpar lista
     elif opcao == '3':
-        lista_de_tarefas.clear()
+        decisao = input(
+            'deseja realmente limpar a lista de tarefas? sim ou não: ')
+        if decisao == 'sim':
+            lista_de_tarefas.clear()
+        elif decisao == 'nao':
+            break
+        elif decisao == str:
+            print('opção invalida')
 
     if opcao == '4':
         break
