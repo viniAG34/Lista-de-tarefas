@@ -1,7 +1,8 @@
 from models.models import Tarefa
 
-# lista de armazenamento
+#eco %cd% -> retorna o caminho da pasta no win
 
+# lista de armazenamento
 
 class DadosTarefas:
     lista_tarefas = []

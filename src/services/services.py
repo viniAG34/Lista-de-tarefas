@@ -4,9 +4,9 @@ from repository.repository import lista_tarefas
 
 class Funcoes_tarefa:
     @classmethod
-    def apresentar_tarefas(cls):
+    def apresentar_tarefas(lista_tarefas):
         """imprime lista de tarefas"""
-        for i, tarefa in enumerate(cls.lista_tarefas, start=1):
+        for i, tarefa in enumerate(lista_tarefas, start=1):
             print(f"{i}. {tarefa.titulo}")
 
     @classmethod
